@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExportExcel" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="496,1034" sap2010:WorkflowViewState.IdRef="ExportExcel_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExportExcel" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="496,933" sap2010:WorkflowViewState.IdRef="ExportExcel_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,7 @@
       <AssemblyReference>Google.Apis.Drive.v3</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExportExcel" sap:VirtualizedContainerService.HintSize="476,934" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExportExcel" sap:VirtualizedContainerService.HintSize="476,833" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="434785127453-2dvckvd8hti3jtbg70qltiqpl7ouap0d.apps.googleusercontent.com" Name="clientID" />
       <Variable x:TypeArguments="x:String" Default="eiejbsGt0E6G8yFD5Rh5xH-L" Name="secretID" />
@@ -59,7 +59,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uga:GSuiteApplicationScope ApiKey="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" KeyPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" CredentialID="[clientID]" CredentialSecret="[secretID]" DataStoreLocation="Local disk" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="434,842" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="Custom" Password="notasecret" Services="Unselected">
+    <uga:GSuiteApplicationScope ApiKey="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" KeyPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" CredentialID="[clientID]" CredentialSecret="[secretID]" DataStoreLocation="Local disk" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="434,741" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="Custom" Password="notasecret" Services="Unselected">
       <uga:GSuiteApplicationScope.AuthenticationScopes>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="8">
           <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/drive.readonly</InArgument>
@@ -76,7 +76,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ug:SimpleObjectContainer" Name="GSuiteScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,731" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,630" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="datatable" />
               <Variable x:TypeArguments="sd:DataTable" Name="dtName" />
@@ -89,7 +89,6 @@
             <uga:FindFiles ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DisplayName="Find Files and Folders" FirstResultId="[strFileID]" sap:VirtualizedContainerService.HintSize="334,79" sap2010:WorkflowViewState.IdRef="FindFiles_1" MaxResults="50" SearchExpression="name = 'Test1111'" SupportsTeamDrives="False" />
             <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="False" Result="[dtName]" SheetName="แผ่น1" SpreadsheetId="[strFileID]" />
             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;6&quot;,&quot;Varrr&quot;}]" DataTable="[dtName]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[dtName.ToString]" />
             <uga:WriteRange ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[dtName]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="WriteRange_1" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="แผ่น1" SpreadsheetId="[strFileID]" StartingCell="A1" />
           </Sequence>
         </ActivityAction>
