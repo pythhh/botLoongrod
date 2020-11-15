@@ -1,14 +1,15 @@
 {
   "name": "RPA-Project",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "ExportExcel.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
-    "UiPath.Excel.Activities": "[2.7.2]",
+    "UiPath.Excel.Activities": "[2.9.3]",
     "UiPath.GSuite.Activities": "[1.7.0]",
-    "UiPath.Mail.Activities": "[1.7.2]",
-    "UiPath.System.Activities": "[19.10.1]",
-    "UiPath.UIAutomation.Activities": "[19.11.3]"
+    "UiPath.Mail.Activities": "[1.9.3]",
+    "UiPath.System.Activities": "[20.10.1]",
+    "UiPath.UIAutomation.Activities": "[19.11.3]",
+    "UiPath.Word.Activities": "[1.5.3]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
