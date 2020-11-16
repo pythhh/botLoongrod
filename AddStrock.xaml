@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Aggregate" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="550.666666666667,3506" sap2010:WorkflowViewState.IdRef="Aggregate_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Aggregate" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="551,3460" sap2010:WorkflowViewState.IdRef="Aggregate_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
       <x:String>System.Activities</x:String>
@@ -46,7 +46,7 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddStrock" sap:VirtualizedContainerService.HintSize="530.666666666667,3446" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddStrock" sap:VirtualizedContainerService.HintSize="531,3400" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="434785127453-2dvckvd8hti3jtbg70qltiqpl7ouap0d.apps.googleusercontent.com" Name="clientID" />
       <Variable x:TypeArguments="x:String" Default="eiejbsGt0E6G8yFD5Rh5xH-L" Name="secretID" />
@@ -65,32 +65,32 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="488.666666666667,244.666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter the number of 'Fried Durian Mini' products added to stock." Title="Add Strock">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="489,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter the number of 'Fried Durian Mini' products added to stock." Title="Add Strock">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="ui:GenericValue">[productMini]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="488.666666666667,244.666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please enter the number of 'Fried Durian S' products added to stock." Title="Add Strock">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="489,238" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please enter the number of 'Fried Durian S' products added to stock." Title="Add Strock">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="ui:GenericValue">[productS]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="488.666666666667,244.666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please enter the number of 'Fried Durian M' products added to stock." Title="Add Strock">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="489,238" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please enter the number of 'Fried Durian M' products added to stock." Title="Add Strock">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="ui:GenericValue">[productM]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="488.666666666667,244.666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Please enter the number of 'Fried Durian L' products added to stock." Title="Add Strock">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="489,238" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Please enter the number of 'Fried Durian L' products added to stock." Title="Add Strock">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="ui:GenericValue">[productL]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="488.666666666667,244.666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Please enter the number of 'Mangosteen Freeze-dried' products added to stock." Title="Add Strock">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="489,238" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Please enter the number of 'Mangosteen Freeze-dried' products added to stock." Title="Add Strock">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="ui:GenericValue">[Mangosteen]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <Assign sap:VirtualizedContainerService.HintSize="488.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="489,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[addProduct]</OutArgument>
       </Assign.To>
@@ -98,7 +98,7 @@
         <InArgument x:TypeArguments="s:String[]">[{productMini, productS, productM, productL, Mangosteen}]</InArgument>
       </Assign.Value>
     </Assign>
-    <uga:GSuiteApplicationScope ApiKey="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" KeyPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" CredentialID="[clientID]" CredentialSecret="[secretID]" DataStoreLocation="Local disk" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="488.666666666667,1828.66666666667" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="Custom" Password="notasecret" Services="Unselected">
+    <uga:GSuiteApplicationScope ApiKey="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" KeyPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" CredentialID="[clientID]" CredentialSecret="[secretID]" DataStoreLocation="Local disk" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="489,1818" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="Custom" Password="notasecret" Services="Unselected">
       <uga:GSuiteApplicationScope.AuthenticationScopes>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="8">
           <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/drive.readonly</InArgument>
@@ -115,7 +115,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ug:SimpleObjectContainer" Name="GSuiteScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454.666666666667,1716" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="455,1707" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="row" />
               <Variable x:TypeArguments="sd:DataTable" Name="sum" />
@@ -126,9 +126,9 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uga:FindFiles ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DisplayName="Find Files and Folders" FirstResultId="[strFileID]" sap:VirtualizedContainerService.HintSize="412.666666666667,80.6666666666667" sap2010:WorkflowViewState.IdRef="FindFiles_1" MaxResults="50" SearchExpression="name = 'ทุเรียนทอดลุงรอด by Ethelbert'" SupportsTeamDrives="False" />
-            <uga:ReadColumn ContinueOnError="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Column" sap:VirtualizedContainerService.HintSize="412.666666666667,135.333333333333" sap2010:WorkflowViewState.IdRef="ReadColumn_1" Result="[remainingProduct]" SheetName="Stock Products" SpreadsheetId="[strFileID]" StartingCell="B2" />
-            <Assign sap:VirtualizedContainerService.HintSize="412.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <uga:FindFiles ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DisplayName="Find Files and Folders" FirstResultId="[strFileID]" sap:VirtualizedContainerService.HintSize="413,79" sap2010:WorkflowViewState.IdRef="FindFiles_1" MaxResults="50" SearchExpression="name = 'ทุเรียนทอดลุงรอด by Ethelbert'" SupportsTeamDrives="False" />
+            <uga:ReadColumn ContinueOnError="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Column" sap:VirtualizedContainerService.HintSize="413,132" sap2010:WorkflowViewState.IdRef="ReadColumn_1" Result="[remainingProduct]" SheetName="Stock Products" SpreadsheetId="[strFileID]" StartingCell="B2" />
+            <Assign sap:VirtualizedContainerService.HintSize="413,60" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[row]</OutArgument>
               </Assign.To>
@@ -136,7 +136,7 @@
                 <InArgument x:TypeArguments="x:Int32">0</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="412.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign sap:VirtualizedContainerService.HintSize="413,60" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="ui:GenericValue">[col]</OutArgument>
               </Assign.To>
