@@ -1,8 +1,9 @@
 {
   "name": "RPA-Project",
   "description": "Blank Process",
-  "main": "ExportExcel.xaml",
+  "main": "Monthly.xaml",
   "dependencies": {
+    "Microsoft.Activities": "[1.0.1]",
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.9.3]",
     "UiPath.GSuite.Activities": "[1.7.0]",
