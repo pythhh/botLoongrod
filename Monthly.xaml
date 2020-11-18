@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Monthly" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="882,2654" sap2010:WorkflowViewState.IdRef="Monthly_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Monthly" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="977.333333333333,4547.33333333333" sap2010:WorkflowViewState.IdRef="Monthly_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="48">
+    <scg:List x:TypeArguments="x:String" Capacity="25">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -55,7 +55,7 @@
       <AssemblyReference>UiPath.Word</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Seperate Month" DisplayName="Monthly" sap:VirtualizedContainerService.HintSize="943.333333333333,3086" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Seperate Month" DisplayName="Monthly" sap:VirtualizedContainerService.HintSize="957.333333333333,4447.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="434785127453-2dvckvd8hti3jtbg70qltiqpl7ouap0d.apps.googleusercontent.com" Name="clientID" />
       <Variable x:TypeArguments="x:String" Default="eiejbsGt0E6G8yFD5Rh5xH-L" Name="secretID" />
@@ -77,7 +77,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uga:GSuiteApplicationScope ApiKey="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" KeyPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" CredentialID="[clientID]" CredentialSecret="[secretID]" DataStoreLocation="Local disk" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="901.333333333333,2963.33333333333" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="Custom" Password="notasecret" Services="Unselected">
+    <uga:GSuiteApplicationScope ApiKey="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" KeyPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" CredentialID="[clientID]" CredentialSecret="[secretID]" DataStoreLocation="Local disk" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="915.333333333333,4324.66666666667" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" OAuthClient="Custom" Password="notasecret" Services="Unselected">
       <uga:GSuiteApplicationScope.AuthenticationScopes>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="8">
           <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/drive.readonly</InArgument>
@@ -94,7 +94,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ug:SimpleObjectContainer" Name="GSuiteScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="867.333333333333,2851.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="881.333333333333,4212" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:Object[]" Name="header" />
             </Sequence.Variables>
@@ -103,22 +103,26 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uga:FindFiles ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DisplayName="Find Files and Folders" FirstResultId="[strFileID]" sap:VirtualizedContainerService.HintSize="825.333333333333,80" sap2010:WorkflowViewState.IdRef="FindFiles_1" MaxResults="50" SearchExpression="name = 'ทุเรียนทอดลุงรอด by Ethelbert'" SupportsTeamDrives="False" />
-            <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="825.333333333333,134" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="True" Result="[customerData]" SheetName="ResponseSheet" SpreadsheetId="[strFileID]" />
-            <uga:ReadRow ContinueOnError="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Row" sap:VirtualizedContainerService.HintSize="825.333333333333,134" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[header]" SheetName="ResponseSheet" SpreadsheetId="[strFileID]" StartingCell="A1" />
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[customerData]" DisplayName="For Each Row customerData" sap:VirtualizedContainerService.HintSize="825.333333333333,2291.33333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <uga:FindFiles ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DisplayName="Find Files and Folders" FirstResultId="[strFileID]" sap:VirtualizedContainerService.HintSize="839.333333333333,80.6666666666667" sap2010:WorkflowViewState.IdRef="FindFiles_1" MaxResults="50" SearchExpression="name = 'ทุเรียนทอดลุงรอด by Ethelbert'" SupportsTeamDrives="False" />
+            <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="839.333333333333,135.333333333333" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="True" Result="[customerData]" SheetName="ResponseSheet" SpreadsheetId="[strFileID]" />
+            <uga:ReadRow ContinueOnError="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Row" sap:VirtualizedContainerService.HintSize="839.333333333333,135.333333333333" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[header]" SheetName="ResponseSheet" SpreadsheetId="[strFileID]" StartingCell="A1" />
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[customerData]" DisplayName="For Each Row customerData" sap:VirtualizedContainerService.HintSize="839.333333333333,3648.66666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="774.666666666667,2142.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="788.666666666667,3499.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="monthSheet" />
+                      <Variable x:TypeArguments="ui:GenericValue" Name="hasRow" />
+                    </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetMonthYear workflow" sap:VirtualizedContainerService.HintSize="732.666666666667,113.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="GetMonthYear.xaml">
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetMonthYear workflow" sap:VirtualizedContainerService.HintSize="746.666666666667,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="GetMonthYear.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="sd:DataRow" x:Key="row">[row]</InArgument>
                         <OutArgument x:TypeArguments="x:String" x:Key="monthYear">[monthYear]</OutArgument>
@@ -129,21 +133,22 @@
                         <InOutArgument x:TypeArguments="ui:GenericValue" x:Key="yy">[yy]</InOutArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <uga:GetSheets ContinueOnError="{x:Null}" AuthScopesInvalid="False" DisplayName="Get Sheets" sap:VirtualizedContainerService.HintSize="732.666666666667,80" sap2010:WorkflowViewState.IdRef="GetSheets_2" Result="[sheetName]" SpreadsheetId="[strFileID]" />
-                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each Has sheet name?" sap:VirtualizedContainerService.HintSize="732.666666666667,529.333333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[sheetName]">
+                    <uga:GetSheets ContinueOnError="{x:Null}" AuthScopesInvalid="False" DisplayName="Get Sheets" sap:VirtualizedContainerService.HintSize="746.666666666667,80.6666666666667" sap2010:WorkflowViewState.IdRef="GetSheets_2" Result="[sheetName]" SpreadsheetId="[strFileID]" />
+                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each Has sheet name?" sap:VirtualizedContainerService.HintSize="746.666666666667,696.666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[sheetName]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="name" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="696,394.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="696,561.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[monthYear = name.ToString]" sap:VirtualizedContainerService.HintSize="654,302.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="654,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[name.ToString]" />
+                            <If Condition="[monthYear = name.ToString]" sap:VirtualizedContainerService.HintSize="654,366.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,13 +156,13 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="304,153.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,216" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_9">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Boolean">[sheetHas]</OutArgument>
                                     </Assign.To>
@@ -165,16 +170,17 @@
                                       <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                     </Assign.Value>
                                   </Assign>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_1" />
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence sap:VirtualizedContainerService.HintSize="304,153.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,154" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign sap:VirtualizedContainerService.HintSize="262,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_10">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Boolean">[sheetHas]</OutArgument>
                                     </Assign.To>
@@ -195,44 +201,97 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEach>
-                    <If Condition="[sheetHas]" DisplayName="If has sheet name" sap:VirtualizedContainerService.HintSize="732.666666666667,694.666666666667" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[sheetHas]" DisplayName="If has sheet name" sap:VirtualizedContainerService.HintSize="746.666666666667,700" sap2010:WorkflowViewState.IdRef="If_2">
                       <If.Then>
-                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,62" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="yep" />
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="yep" />
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,545.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,549.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_21">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="nope" />
-                          <uga:AddNewSheet Columns="{x:Null}" ContinueOnError="{x:Null}" PositionIndex="{x:Null}" Rows="{x:Null}" AuthScopesInvalid="False" DisplayName="Add New Sheet" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="AddNewSheet_2" SheetName="[monthYear]" SpreadsheetId="[strFileID]" />
-                          <uga:AppendRow ContinueOnError="{x:Null}" AuthScopesInvalid="False" CellReference="A1" DisplayName="Append Row" sap:VirtualizedContainerService.HintSize="334,177.333333333333" sap2010:WorkflowViewState.IdRef="AppendRow_2" Row="[header]" SheetName="[monthYear]" SpreadsheetId="[strFileID]" />
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="nope" />
+                          <uga:AddNewSheet Columns="{x:Null}" ContinueOnError="{x:Null}" PositionIndex="{x:Null}" Rows="{x:Null}" AuthScopesInvalid="False" DisplayName="Add New Sheet" sap:VirtualizedContainerService.HintSize="334,135.333333333333" sap2010:WorkflowViewState.IdRef="AddNewSheet_2" SheetName="[monthYear]" SpreadsheetId="[strFileID]" />
+                          <uga:AppendRow ContinueOnError="{x:Null}" AuthScopesInvalid="False" CellReference="A1" DisplayName="Append Row" sap:VirtualizedContainerService.HintSize="334,179.333333333333" sap2010:WorkflowViewState.IdRef="AppendRow_2" Row="[header]" SheetName="[monthYear]" SpreadsheetId="[strFileID]" />
                         </Sequence>
                       </If.Else>
                     </If>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="732.666666666667,62" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[monthYear]" />
-                    <uga:AppendRow ContinueOnError="{x:Null}" AuthScopesInvalid="False" CellReference="A2" DisplayName="Append Row" sap:VirtualizedContainerService.HintSize="732.666666666667,177.333333333333" sap2010:WorkflowViewState.IdRef="AppendRow_3" Row="[row.ItemArray]" SheetName="[monthYear]" SpreadsheetId="[strFileID]" />
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="732.666666666667,52" sap2010:WorkflowViewState.IdRef="CommentOut_8">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,282" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="746.666666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[monthYear]" />
+                    <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="746.666666666667,135.333333333333" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[monthSheet]" SheetName="[monthYear]" SpreadsheetId="[strFileID]" />
+                    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[monthSheet]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="746.666666666667,710.666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="mRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="696,561.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[String.Join(&quot;,&quot;, row.ItemArray).Equals(String.Join(&quot;,&quot;, mRow.ItemArray))]" sap:VirtualizedContainerService.HintSize="654,469.333333333333" sap2010:WorkflowViewState.IdRef="If_3">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,318.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="same row" />
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="ui:GenericValue">[hasRow]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="ui:GenericValue">[True]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_2" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,256.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="not same now" />
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="ui:GenericValue">[hasRow]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="ui:GenericValue">[False]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                    <If Condition="[hasRow]" sap:VirtualizedContainerService.HintSize="746.666666666667,524.666666666667" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="Not write" />
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,374" sap2010:WorkflowViewState.IdRef="Sequence_27">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uga:WriteRange ContinueOnError="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[row.ItemArray]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="WriteRange_2" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[monthYear]" SpreadsheetId="[strFileID]" StartingCell="A2" />
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="GoGo" />
+                          <uga:AppendRow ContinueOnError="{x:Null}" AuthScopesInvalid="False" CellReference="A2" DisplayName="Append Row" sap:VirtualizedContainerService.HintSize="334,179.333333333333" sap2010:WorkflowViewState.IdRef="AppendRow_3" Row="[row.ItemArray]" SheetName="[monthYear]" SpreadsheetId="[strFileID]" />
                         </Sequence>
-                      </ui:CommentOut.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:CommentOut>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="732.666666666667,62" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="end" />
+                      </If.Else>
+                    </If>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="746.666666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="end" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
